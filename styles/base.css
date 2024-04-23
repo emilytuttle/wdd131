@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+:root {
+ font-size: 100%;
+}
+
 header, footer, #header-main {
     background-color: rgb(19, 81, 146);
     color: #fff;
@@ -120,4 +124,8 @@ nav a:hover {
 
 hr {
     width: 80%;
+}
+
+img {
+    width: 150x;
 }

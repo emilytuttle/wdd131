@@ -28,6 +28,9 @@ footer, #header-main h1 {
     align-items: center;
 }
 
+#header-main h1 {
+    padding-top: 20px;
+}
 
 nav {
     background-color: rgb(50, 49, 49);

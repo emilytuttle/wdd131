@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Emily Tuttle</title>
+    <meta name="description" content="WDD 131, Emily Tuttle, Home Page">
+    <meta name="author" content="Emily Tuttle">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <div id="header-main">
+            <h1>WDD 131: Dynamic Web Fundamentals - Emily Tuttle</h1>
+        </div>
+
+        <nav>
+            <a href="https://www.linkedin.com/in/emily-tuttle-7124a121a/">LinkedIn</a>
+            <a href="https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/1?lang=eng&id=p5#p5">Scripture</a>
+            <a>Final Project</a>
+        </nav>
+    </header>
+    <main id="grid-container">
+        <section class="card main-card">
+            
+            <div class="card-container">
+                <h2 class="card-header">About Me</h2>
+                <div class="personal-info">
+                    <p class="card-content">My name is Emily. I was born and raised in Utah in the United States. I work as a product photographer and shipping manager for a jeweler and as an airfare expert for a flight deals company. I like to play piano, do pyrography, and rock climb.</p>
+                    <img src="images/profile.jpeg" alt="Emily-Tuttle" width="150" class="card-content">
+                </div>
+                <h3>Pyrography</h3>
+                <hr width="80%"/>
+                <div class="pyrography-info">
+                    <img src="images/pyrography.JPG"    alt="Pyrography" width="200" class="card-content">
+                    <p class="card-content">The word pyrography comes from Greek and means "writing with fire." I usually explain it as drawing with a soldering iron. I occasionally do commissions, but mostly do personal projects to relax and have fun. I'm not great at color theory, but this is an art form that works for me to just shade and add texture.</p>
+                </div>
+            </div>
+            
+        </section>
+        <section class="card aside">
+            <h2 class="card-header">Web Dev Resources</h2>
+            <section id="link-container">
+                <a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla</a>
+                <a href="https://www.udemy.com" target="_blank">Udemy</a>
+                <a href="https://www.w3schools.com" target="_blank">W3 Schools</a>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌻 Emily Tuttle 🌻 Utah</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+
+</html>

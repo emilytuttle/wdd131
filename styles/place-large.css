@@ -23,7 +23,11 @@
     right: 30px;
 }
 
-#weather-icon:after {
-    display: none
+#weather-emoji {
+    display: block
+}
+
+#weather-icon {
+    display: none;
 }
 }

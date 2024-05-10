@@ -12,8 +12,8 @@
 }
 
 header, footer {
-    background-color: rgb(251, 0, 0);
-    color: white;
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,6 +47,14 @@ p {
     font-weight: bold;
 }
 
-/* header::after {
+#weather-emoji {
+    display: none
+}
+
+#weather-icon {
+    display: block;
+}
+
+header::after {
     color: var(--main-color)
-} */
+}

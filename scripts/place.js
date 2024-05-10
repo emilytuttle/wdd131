@@ -22,5 +22,13 @@ function calculateWindChill(temperature, windspeed) {
 
 windchillNumber = calculateWindChill(25, 16)
 
-windchill.textContent = calculateWindChill(25, 16)
+
+if (temperature <= 10 && windspeed > 4.8) {
+    windchill.textContent = calculateWindChill(25, 16)
+}
+else {
+    windchill.textContent = "N/A"
+}
+
+
 

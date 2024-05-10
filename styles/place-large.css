@@ -22,4 +22,8 @@
     bottom: 250px;
     right: 30px;
 }
+
+#weather-icon:after {
+    display: none
+}
 }

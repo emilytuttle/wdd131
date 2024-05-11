@@ -14,12 +14,12 @@
 #data-box {
     position: absolute;
     left: 30px;
-    top: 150px
+    top: 30px
 }
 
 #weather-box {
     position: absolute;
-    bottom: 250px;
+    bottom: 40px;
     right: 30px;
 }
 

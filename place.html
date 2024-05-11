@@ -19,7 +19,11 @@
     </header>
     <main>
         <div class="color-strip"></div>
-        <img id="hero" srcset="images/italy-large-hero.webp 501w, images/italy-small-hero.webp 500w" src="images/italy-small-hero.webp" sizes=" 500px, 501px" alt="Italy picture small" width="500">
+        <picture class="hero-picture">
+            <source media="(max-width:500px)" srcset="images/italy-small-hero.webp" width="500">
+            <img src="images/italy-large-hero.webp" width="100%">
+        </picture>
+        
         <div class="color-strip"></div>
         <div id="data-box" class="container">
             <h2>Data</h2>

@@ -58,3 +58,11 @@ p {
 header::after {
     color: var(--main-color)
 }
+
+#hero-picture {
+    width: 100vw
+}
+
+main {
+    position: relative;
+}

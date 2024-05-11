@@ -16,15 +16,14 @@ windchillNumber = 0
 
 function calculateWindChill(temperature, windspeed) {
     chill = 35.74 + (0.6215*temperature) - 35.75*(Math.pow(windspeed, 0.16)) + 0.4275*temperature*(Math.pow(windspeed, 0.16))
-    windchillNumber = chill.toFixed(2)
-    return windchillNumber
+    return chill
 }
 
 windchillNumber = calculateWindChill(25, 16)
 
 
 if (temperature <= 10 && windspeed > 4.8) {
-    windchill.textContent = calculateWindChill(25, 16)
+    windchill.textContent = (calculateWindChill(25, 16)).toFixed(2)
 }
 else {
     windchill.textContent = "N/A"

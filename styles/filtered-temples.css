@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+ font-size: 100%;
+}
+
+header, footer {
+    color: white;
+    background-color: rgb(14, 108, 249);
+    height: 60px;
+    display: flex;
+}
+
+footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    list-style: none;
+}
+
+#menu {
+    font-size: 65px;
+    position: absolute;
+    right: 30px;
+
+}
+
+#menu::before {
+    content:"≡";
+}
+
+.gone {
+   display: none;
+}
+
+
+.navigation {
+    list-style: none;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    
+}
+
+.navigation a:hover, .navigation a:active {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  
+}
+
+.show li {
+    display: block;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.shown {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(14, 108, 249);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    padding: 20px;
+}
+
+#menu.show::before {
+    content: "X";
+    position:fixed;
+    right: 40px;
+    top: 10px;
+    z-index: 101;
+    font-size: 30px;
+}
+
+#menu.show:hover {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 400px
+}
+
+figure {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+figcaption {
+    padding: 10px;
+}
+
+.temple-card {
+    width: 500px;
+    background-color: rgb(229, 226, 226);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    margin: 30px;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.temple-info {
+    padding: 8px;
+}
+
+#location, #dedication, #area {
+    padding: 3px;
+}
+
+.tag {
+    font-weight: bold;
+}

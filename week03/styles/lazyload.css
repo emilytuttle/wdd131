@@ -1,0 +1,17 @@
+.image {
+    width: 400px;
+    height: 600px;
+    display: block;
+}
+main {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.fade-in-image { animation: fadeIn 5s; }

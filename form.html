@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Product Review Form - Emily Tuttle</title>
+    <meta name="description" content="WDD 131 - Product Review Form">
+    <meta name="author" content="Emily Tuttle">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="form.html" defer></script>
+</head>
+<body>
+   <header class="header">
+    <h1 class="title">Product Review</h1>
+   
+   </header>
+   <main>
+    <form method="get" action="review.html">
+        <fieldset>
+            <label for="product-select">Choose a car:</label>
+
+            <select name="product-select" id="caproduct-selectrs">
+            <option value="select" disabled>Select a Product ...</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Overall Rating</legend>
+          
+            <div>
+                <label for="one-star">☆</label>
+                <input type="radio" id="one-star" name="stars" value="one-star" checked required />
+            </div>
+          
+            <div>
+              <input type="radio" id="two-star" name="stars" value="two-star"  required/>
+              <label for="two-star">☆☆</label>
+            </div>
+          
+            <div>
+              <input type="radio" id="three-star" name="stars" value="three-star"  required/>
+              <label for="three-star">☆☆☆</label>
+            </div>
+            <div>
+                <input type="radio" id="four-star" name="stars" value="four-star" required />
+                <label for="four-star">☆☆☆☆</label>
+              </div>
+              <div>
+                <input type="radio" id="five-star" name="stars" value="five-star"required />
+                <label for="five-star">☆☆☆☆☆</label>
+              </div>
+          </fieldset>
+          <fieldset>
+            <label for="date-select">Date of Installation</label>
+            <input type="date" id="date-select" required/>
+          </fieldset>
+          <fieldset>
+            <p>Which features did you find useful in the product? Check all that apply.</p>
+            <input type="checkbox" id="durability" name="durability" value="durability">
+            <label for="durability"> Durability</label><br>
+            <input type="checkbox" id="ease-of-use" name="ease-of-use" value="ease-of-use">
+            <label for="ease-of-use"> Ease of Use</label><br>
+            <input type="checkbox" id="performance" name="performance" value="performance">
+            <label for="performance"> Performance</label><br>
+            <input type="checkbox" id="design" name="design" value="design">
+            <label for="design"> Design</label><br>
+          </fieldset>
+          <fieldset>
+            <label for="written-review">Written Review</label>
+            <input type="text" id="written-review" name="written-review"></input>
+          </fieldset>
+            <fieldset>
+                <label for="user-name">Your Name</label>
+                <input type="text" id="user-name" name="user-name"></input>
+            </fieldset>
+        
+                <button type="Submit">Submit</button>
+
+    </form>
+      
+   </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌻 Emily Tuttle 🌻 Utah</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+
+</html>

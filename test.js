@@ -1,11 +1,3 @@
-const d = new Date()
-let year = d.getFullYear()
-let lastModif = new Date(document.lastModified);
-let currentYear = document.getElementById("currentyear")
-currentYear.textContent = year
-let last = document.getElementById("lastModified")
-last.textContent = lastModif
-
 const products = [
     {
       id: 'fc-1888',
@@ -33,19 +25,16 @@ const products = [
       averagerating: 5.0
     }
   ];
-  let dropdown = document.getElementById('product-select')
 
-function dropdownList() {
+  // let dropdown = document.getElementById('product-select')
+
+function dropdownFill() {
     
     for (let i=0; i < products.length; i++) {
-        const dropdownItem = document.createElement('option')
         let object = products[i]
-        dropdownItem.textContent = object.name
-        dropdownItem.id = object.id
-        dropdown.appendChild(dropdownItem)
+        console.log(object.name)
         
-
     }
 }
 
-dropdownList()
+dropdownFill()

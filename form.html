@@ -8,7 +8,7 @@
     <meta name="author" content="Emily Tuttle">
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/form-large.css">
-    <script src="form.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 </head>
 <body>
    <header class="header">
@@ -20,7 +20,7 @@
         <fieldset>
             <p>Choose a car:</p>
 
-            <select name="product-select" id="caproduct-selectrs">
+            <select name="product-select" id="product-select">
             <option value="select" disabled>Select a Product ...</option>
             </select>
         </fieldset>
@@ -28,8 +28,8 @@
             <legend>Overall Rating</legend>
           
             <div>
-                <label for="one-star">☆</label>
                 <input type="radio" id="one-star" name="stars" value="one-star" checked required />
+                <label for="one-star">☆</label>
             </div>
           
             <div>

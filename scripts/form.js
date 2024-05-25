@@ -49,3 +49,24 @@ function dropdownList() {
 }
 
 dropdownList()
+
+let form = document.getElementById('form')
+const formCount = () => {
+    
+    let count = localStorage.getItem('formCount')
+    count = Number(localStorage.getItem('formCount')) + 1
+    localStorage.setItem('formCount', count)
+    
+
+}
+
+submitButton = document.getElementById('submit-button')
+
+
+formCountDisplay = document.getElementById('form-count-display')
+
+function display() {
+    let displayAmount =(localStorage.getItem("formCount"))
+    formCountDisplay.textContent = displayAmount
+}
+

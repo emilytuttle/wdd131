@@ -1,0 +1,27 @@
+
+
+@media screen and (min-width: 600px){
+ 
+ body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }   
+
+ body {
+    background-color: gray;
+ }
+
+ form {
+    background-color: white;
+    border: 2px solid black;
+ }
+
+ header, footer {
+    width: 100vw;
+ }
+
+    
+}

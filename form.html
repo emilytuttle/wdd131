@@ -16,16 +16,16 @@
    
    </header>
    <main>
-    <form method="get" action="review.html">
+    <form method="get" action="review.html" id="form">
         <fieldset>
-            <p>Choose a car:</p>
+            <p class="label">Choose a car: &lpar;required&rpar;</p>
 
             <select name="product-select" id="product-select">
             <option value="select" disabled>Select a Product ...</option>
             </select>
         </fieldset>
         <fieldset>
-            <legend>Overall Rating</legend>
+            <legend class="label">Overall Rating &lpar;required&rpar;:</legend>
           
             <div>
                 <input type="radio" id="one-star" name="stars" value="one-star" checked required />
@@ -51,11 +51,11 @@
               </div>
           </fieldset>
           <fieldset>
-            <label for="date-select">Date of Installation</label>
+            <label for="date-select" class="label">Date of Installation &lpar;required&rpar;:</label>
             <input type="date" id="date-select" required/>
           </fieldset>
           <fieldset>
-            <p>Which features did you find useful in the product? Check all that apply.</p>
+            <p class="label">Which features did you find useful in the product? Check all that apply:</p>
             <input type="checkbox" id="durability" name="durability" value="durability">
             <label for="durability"> Durability</label><br>
             <input type="checkbox" id="ease-of-use" name="ease-of-use" value="ease-of-use">
@@ -65,16 +65,16 @@
             <input type="checkbox" id="design" name="design" value="design">
             <label for="design"> Design</label><br>
           </fieldset>
-          <fieldset>
-            <label for="written-review">Written Review</label>
+          <fieldset class="vertical">
+            <label for="written-review" class="label">Written Review:</label>
             <textarea id="written-review" name="written-review"></textarea>
           </fieldset>
-            <fieldset>
-                <label for="user-name">Your Name</label>
+            <fieldset class="vertical">
+                <label for="user-name" class="label">Your Name:</label>
                 <input type="text" id="user-name" name="user-name" />
             </fieldset>
         
-                <button type="submit">Submit</button>
+                <button type="submit" id="submit-button" onclick="formCount()">Submit</button>
 
     </form>
       

@@ -71,7 +71,7 @@ const climbList = [
     {
         climbName: "Left of Coats",
         location: "Huntington Canyon",
-        climbType: "Lead",
+        climbType: "Top Rope",
         imageUrl: "https://mountainproject.com/assets/photos/climb/120273163_medium_1612746369.jpg?cache=1612802130",
         moreInfo: 'https://www.mountainproject.com/route/120270146/left-of-coats'
     },
@@ -85,7 +85,7 @@ const climbList = [
     {
         climbName: "Twig and Berries",
         location: "Salt Creek Canyon",
-        climbType: "Top Rope",
+        climbType: "Lead",
         imageUrl: "https://mountainproject.com/assets/photos/climb/121490079_medium_1634571685_topo.jpg?cache=1634743102",
         moreInfo: 'https://www.mountainproject.com/route/109639591/twig-and-berries'
     },

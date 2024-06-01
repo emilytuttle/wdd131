@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Utah Climbing Information - Emily Tuttle</title>
+    <meta name="description" content="WDD 131 - Information about climbing in general and climbing in Utah">
+    <meta name="author" content="Emily Tuttle">
+    <link rel="stylesheet" href="styles/website-project.css">
+    <link rel="stylesheet" href="styles/website-project-large.css">
+    <script src="scripts/website-project.js" defer></script>
+</head>
+<body>
+   <header class="header">
+    <h1 class="title">Utah Climbing Info</h1>
+    <a id="menu"></a>
+    <nav>
+        <ul class="navigation">
+            <li id="home-button"><a>Home</a></li>
+            <li id="top-rope-button"><a>Top Rope</a></li>
+            <li id="lead-button"><a>Lead</a></li>
+            <li id="bouldering-button"><a>Bouldering</a></li>
+        </ul>
+    </nav>
+   </header>
+   <main>
+        <img id="hero" loading="lazy">
+        <h2 id="page-header"></h2>
+        <div id="info-box"></div>
+        <div id="container">
+            
+        </div>
+
+        <form method="get" id="form">
+            <h3>Still have questions?</h3>
+            <fieldset>
+                <p class="label">How did you find us:</p>
+    
+                <select name="how-select" id="how-select">
+                <option value="select" disabled>Select an answer ...</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend class="label">Rate Your Climbing Knowledge/Experience:</legend>
+              
+                <div>
+                    <input type="radio" id="none" name="rating" value="none" checked />
+                    <label for="none">None</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="a-little" name="rating" value="a-little"/>
+                  <label for="a-little">A Little</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="average" name="rating" value="average"  />
+                  <label for="average">Average</label>
+                </div>
+                <div>
+                    <input type="radio" id="quite-a-bit" name="rating" value="quite-a-bit"  />
+                    <label for="quite-a-bit">Quite a bit</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="a-lot" name="rating" value="a-lot"  />
+                    <label for="a-lot">A Lot</label>
+                  </div>
+              </fieldset>
+
+              <fieldset>
+                <p class="label">Which kinds of climbing do you want to know more about?:</p>
+                <input type="checkbox" id="top-rope" name="top-rope" value="top-rope">
+                <label for="top-rope"> Top Rome</label><br>
+                <input type="checkbox" id="lead" name="lead" value="lead">
+                <label for="lead"> Lead</label><br>
+                <input type="checkbox" id="bouldering" name="bouldering" value="bouldering">
+                <label for="bouldering"> Bouldering</label><br>
+              </fieldset>
+              <fieldset class="vertical">
+                <label for="written-review" class="label">What specific questions do you have?:</label>
+                <textarea id="written-review" name="written-review"></textarea>
+              </fieldset>
+                <fieldset class="vertical">
+                    <label for="user-name" class="label">Your Name:</label>
+                    <input type="text" id="user-name" name="user-name" />
+                </fieldset>
+            
+                    <button type="submit" id="submit-button" >Submit</button>
+    
+        </form>
+        
+      
+   </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌻 Emily Tuttle 🌻 Utah</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+
+</html>
